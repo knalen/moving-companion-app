@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moving Companion Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <a href="#"><h1>Your Moving Companion</h1></a>
+        <a href="#"><img src="logo.png" alt="Moving Companion logo"></a>
+    </header>
+    
+    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+    
+    <form id="form-container" class="form-container">
+        <label for="street"></label><input type="text" id="street" value="Enter your Street here" onfocus='if(this.value=="Enter your Street here"){this.value="";}' onblur="this.value = this.value==''?'Enter your Street here':this.value;">
+        <label for="city"></label><input type="text" id="city" value="Enter your City here" onfocus='if(this.value=="Enter your City here"){this.value="";}' onblur="this.value = this.value==''?'Enter your City here':this.value;">
+        <button id="submit-btn">Submit</button>
+    </form>
+    
+    <div class="content">
+        <div class="picture-container">
+            <h3>See a picture of the address below</h3>
+            <div id="picture"></div>
+        </div>
+        <div class="wikipedia-container">
+            <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+            <ul id="wikipedia-links"></ul>
+        </div>
+        <div class="weather-container">
+            <h3 id="weather-header">Weather for your location</h3>
+            <p id="weather">fsdfsd</p>
+        </div>    
+        
+        
+    </div>  
+</div>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>    
+<script src="scripts.js"></script>    
+</body>
+</html>
